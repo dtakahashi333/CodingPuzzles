@@ -12,25 +12,25 @@ class GcdOfStrings:
             n = m
             m = temp
         # calculate all common divisors.
-        temp_common_divisors = []
+        n_div = []
         i = 1
         while i * i <= n:
             if n % i == 0:
-                temp_common_divisors.append(i)
-                temp_common_divisors.append(n // i)
+                n_div.append(i)
+                another = n // i
+                if another != i:
+                    n_div.append(another)
             i += 1
-        common_divisors = []
+        m_div = []
         i = 1
         while i * i <= m:
             if m % i == 0:
-                if i in temp_common_divisors:
-                    common_divisors.append(i)
+                m_div.append(i)
                 another = m // i
-                if another in temp_common_divisors:
-                    common_divisors.append(another)
+                if another != i:
+                    m_div.append(another)
             i += 1
-
-        common_divisors = sorted(common_divisors, reverse=True)
+        common_divisors = sorted([i for i in n_div if i in m_div], reverse=True)
 
         for d in common_divisors:
             divisor = str1[:d]

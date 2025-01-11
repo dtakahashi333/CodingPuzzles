@@ -1,6 +1,6 @@
 # 3. Longest Substring Without Repeating Characters
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
-class LengthOfLongestSubstring:
+class LongestSubstring:
 
     @staticmethod
     def solve_by_brute_force(s: str) -> int:

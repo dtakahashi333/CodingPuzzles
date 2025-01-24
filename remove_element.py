@@ -1,8 +1,8 @@
-# 27. Remove Element
-# https://leetcode.com/problems/remove-element/
 from typing import List
 
 
+# 27. Remove Element
+# https://leetcode.com/problems/remove-element/
 class RemoveElement:
 
     @classmethod
@@ -36,7 +36,7 @@ class RemoveElement:
 
     @classmethod
     def find(cls, nums: List[int], val: int, i: int, j: int) -> int:
-        if i > j: # Not found
+        if i > j:  # Not found
             return -1
         mid = (i + j) // 2
         if nums[mid] > val:

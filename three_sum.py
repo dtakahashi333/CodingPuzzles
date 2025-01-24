@@ -1,9 +1,9 @@
-# 15. 3Sum
-# https://leetcode.com/problems/3sum/
 from typing import List
 from two_sum import TwoSum
 
 
+# 15. 3Sum
+# https://leetcode.com/problems/3sum/
 class ThreeSum:
 
     @staticmethod

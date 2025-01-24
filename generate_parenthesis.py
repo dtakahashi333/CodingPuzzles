@@ -1,8 +1,8 @@
-# 22. Generate Parentheses
-# https://leetcode.com/problems/generate-parentheses/description/
 from typing import List
 
 
+# 22. Generate Parentheses
+# https://leetcode.com/problems/generate-parentheses/description/
 class GenerateParenthesis:
 
     @staticmethod

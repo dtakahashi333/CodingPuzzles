@@ -1,8 +1,8 @@
-# 10. Regular Expression Matching
-# https://leetcode.com/problems/regular-expression-matching/description/
 from typing import List
 
 
+# 10. Regular Expression Matching
+# https://leetcode.com/problems/regular-expression-matching/description/
 class RegExMatching:
 
     @classmethod

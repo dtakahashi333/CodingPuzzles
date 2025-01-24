@@ -1,6 +1,5 @@
 # 8. String to Integer (atoi)
 # https://leetcode.com/problems/string-to-integer-atoi/description/
-
 class StringToInteger:
 
     @staticmethod
@@ -8,7 +7,7 @@ class StringToInteger:
         sign = None
         num_str = ""
         for c in s:
-            if sign is not None or len(num_str) > 0: # Started getting an integer.
+            if sign is not None or len(num_str) > 0:  # Started getting an integer.
                 if ord(c) < 48 or ord(c) > 57:
                     break
                 else:

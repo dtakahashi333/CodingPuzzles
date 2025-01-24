@@ -1,8 +1,8 @@
-# 14. Longest Common Prefix
-# https://leetcode.com/problems/longest-common-prefix/description/
 from typing import List
 
 
+# 14. Longest Common Prefix
+# https://leetcode.com/problems/longest-common-prefix/description/
 class LongestCommonPrefix:
 
     @staticmethod

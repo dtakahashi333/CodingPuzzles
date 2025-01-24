@@ -1,5 +1,3 @@
-# 21. Merge Two Sorted Lists
-# https://leetcode.com/problems/merge-two-sorted-lists/description/
 from typing import Optional
 
 
@@ -10,6 +8,8 @@ class ListNode:
         self.next = next
 
 
+# 21. Merge Two Sorted Lists
+# https://leetcode.com/problems/merge-two-sorted-lists/description/
 class MergeTwoLists:
 
     @staticmethod
@@ -49,7 +49,7 @@ class MergeTwoLists:
         cur, prev = head, head
         while list2 is not None:
             if cur is None:
-                if prev is None: # list1 is empty.
+                if prev is None:  # list1 is empty.
                     head = list2
                 else:
                     prev.next = list2

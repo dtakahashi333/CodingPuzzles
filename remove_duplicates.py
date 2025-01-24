@@ -1,8 +1,8 @@
-# 26. Remove Duplicates from Sorted Array
-# https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 from typing import List
 
 
+# 26. Remove Duplicates from Sorted Array
+# https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 class RemoveDuplicates:
 
     @staticmethod
@@ -19,5 +19,3 @@ class RemoveDuplicates:
                 prev = nums[j]
                 j += 1
         return j
-
-

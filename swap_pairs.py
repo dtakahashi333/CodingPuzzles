@@ -1,5 +1,3 @@
-# 24. Swap Nodes in Pairs
-# https://leetcode.com/problems/swap-nodes-in-pairs/
 from typing import Optional
 
 
@@ -10,6 +8,8 @@ class ListNode:
         self.next = next
 
 
+# 24. Swap Nodes in Pairs
+# https://leetcode.com/problems/swap-nodes-in-pairs/
 class SwapPairs:
 
     @staticmethod

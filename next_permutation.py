@@ -1,10 +1,10 @@
-from optparse import Option
 from typing import List
 import itertools
 
 
 # 31. Next Permutation
 # https://leetcode.com/problems/next-permutation/
+# https://www.naukri.com/code360/problems/893046?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTabValue=SUBMISSION
 # https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/
 # https://www.youtube.com/watch?v=JDOXKqF60RQ&t=1693s
 class NextPermutation:
@@ -26,14 +26,13 @@ class NextPermutation:
             # Reset nums.
             nums.sort()
         else:
-            desc = nums[i:]
-            desc.sort()
-            j = cls.findIndex(desc, nums[i - 1], 0, len(desc) - 1)
-            tmp = nums[i - 1]
-            nums[i - 1] = desc[j]
-            desc[j] = tmp
-            for k, l in zip(range(i, n), range(0, len(desc))):
-                nums[k] = desc[l]
+            tail = sorted(nums[i:])
+            for k, l in zip(range(i, n), range(len(tail))):
+                nums[k] = tail[l]
+            j = cls.findIndex(nums, nums[i - 1], i, n - 1)
+            tmp = nums[j]
+            nums[j] = nums[i - 1]
+            nums[i - 1] = tmp
 
     @classmethod
     def findIndex(cls, nums: List[int], k: int, i: int, j: int) -> (int, int):

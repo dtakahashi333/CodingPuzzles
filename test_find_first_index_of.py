@@ -8,22 +8,22 @@ class TestFindFirstIndexOf(TestCase):
         haystack = "sadbutsad"
         needle = "sad"
         expected = 0
-        self.assertEquals(expected, FindFirstIndexOf.solve(haystack, needle))
+        self.assertEqual(expected, FindFirstIndexOf.solve(haystack, needle))
 
     def test_solve2(self):
         haystack = "leetcode"
         needle = "leeto"
         expected = -1
-        self.assertEquals(expected, FindFirstIndexOf.solve(haystack, needle))
+        self.assertEqual(expected, FindFirstIndexOf.solve(haystack, needle))
 
     def test_solve3(self):
         haystack = "a"
         needle = "a"
         expected = 0
-        self.assertEquals(expected, FindFirstIndexOf.solve(haystack, needle))
+        self.assertEqual(expected, FindFirstIndexOf.solve(haystack, needle))
 
     def test_solve4(self):
         haystack = ""
         needle = ""
         expected = -1
-        self.assertEquals(expected, FindFirstIndexOf.solve(haystack, needle))
+        self.assertEqual(expected, FindFirstIndexOf.solve(haystack, needle))

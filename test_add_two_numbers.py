@@ -40,7 +40,7 @@ class TestAddTwoNumbers(TestCase):
                 list_to_list_node(l2)
             )
         )
-        self.assertEquals(expected, actual)
+        self.assertEqual(expected, actual)
 
     def test_solve2(self):
         l1 = [0]
@@ -52,7 +52,7 @@ class TestAddTwoNumbers(TestCase):
                 list_to_list_node(l2)
             )
         )
-        self.assertEquals(expected, actual)
+        self.assertEqual(expected, actual)
 
     def test_solve3(self):
         l1 = [9, 9, 9, 9, 9, 9, 9]
@@ -64,4 +64,4 @@ class TestAddTwoNumbers(TestCase):
                 list_to_list_node(l2)
             )
         )
-        self.assertEquals(expected, actual)
+        self.assertEqual(expected, actual)
